@@ -1,0 +1,64 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* A flex container that centers content both vertically & horizontally */
+  .centered-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+  }
+  
+  /* Press Enter text style */
+  .press-enter {
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  
+  /* LANDING PAGE */
+  #landing {
+    background: linear-gradient(135deg, #ffc0cb, #e6e6fa);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Canvas behind text for petals */
+  #petalCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* REVEAL PAGE */
+  #reveal {
+    background: #fff;
+  }
+  
+  /* FINAL PAGE */
+  #final {
+    background: url('assets/blue-roses-bg.jpg') no-repeat center center/cover;
+    background-size: cover;
+  }
+  
+  /* Virtual rose style for final page */
+  .virtual-rose {
+    position: fixed;
+    pointer-events: none;
+    font-size: 2rem;
+    transition: transform 0.5s, opacity 0.5s;
+  }
+  
